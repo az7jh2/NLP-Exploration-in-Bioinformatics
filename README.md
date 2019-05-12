@@ -59,5 +59,6 @@ Retrieve data from built SQLite database by any of the genes, diseases or bioeve
 
 ### An Search Example
 Gene name: *TP53*
+
 Bioevents: *Gene_expression* & *Regulation*
 ![Search Results](/images/SearchExample.jpg)
