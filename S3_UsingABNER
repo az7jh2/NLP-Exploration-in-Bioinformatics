@@ -1,0 +1,9 @@
+调用java命令，使用ABNER进行命名实体识别
+
+1.在http://pages.cs.wisc.edu/~bsettles/abner/中下载Java文件abner.jar
+2.打开命令行，执行命令java -jar abner.jar，如果出现java.lang.OutOfMemoryError错误，执行java -Xmx100m -jar abner.jar，将JVM的内存分配增加至100MB
+3.在GUI中选择Annotation->Batch file annotation，Directory选择为存放有文本的文件夹，Output Format默认为SGML格式，然后点击“OK”。可以在命令行中看到ABNER在处理每一个文本文件的提示
+4.Batch处理的结果就在源文件夹中，命名规则为源文件名+“.sgml”
+
+单线程运行时间约为1h
+多线程运行时，打开多个命令行，然后分别执行java命令，选择不同的子文件夹，同时进行命名实体识别工作

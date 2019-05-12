@@ -1,0 +1,5 @@
+由于并行使用TEES需要安装SLURM，非常麻烦，所以只采用单线程模式
+将压缩包inputX.tar.gz复制到TEES目录下，运行
+python classify.py -m GE11 -i inputX.tar.gz -o OUTSTEM
+每一个压缩包2500篇文档为宜，数量太大的话，会出现java.lang.OutOfMemoryError错误
+结果在OUTSTEM-pred.xml.gz中
